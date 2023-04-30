@@ -7,7 +7,7 @@ const exerciseConstructor = () => {
 
     const arrowImg = document.createElement("img");
     arrowImg.classList.add("exercise__arrow", "expandable");
-    arrowImg.src = "../src/img/down-arrow.png";
+    arrowImg.src = "/src/img/down-arrow.png";
 
     const headerArrow = document.createElement("div");
     headerArrow.classList.add("exercise__header__arrow");
