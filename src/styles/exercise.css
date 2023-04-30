@@ -5,6 +5,9 @@
     margin-bottom: 3vh;
     z-index: 2;
 }
+.exercise {
+    cursor: pointer;
+}
 
 .exercise--expanded {
     height: 70vh;
@@ -13,6 +16,17 @@
 .exercise--expanded .exercise__caption,
 .exercise--expanded .exercise__nextButton {
     display: block;
+}
+
+.exercise--expanded .exercise__short {
+    display: none;
+}
+
+.exercise__arrow {
+    width: 30px;
+}
+.exercise__arrow:hover {
+    cursor: pointer;
 }
 
 .exercise__caption {
@@ -40,11 +54,8 @@
 .exercise__header__title {
     font-size: calc(1.5em + 0.8vw);
 }
-.exercise__header__arrow {
-    border: 1px solid red;
-}
 
-.exercise__category {
+.exercise__short {
     align-self: flex-start;
     margin: 3px 0 0 0.5em;
     color: #716060;

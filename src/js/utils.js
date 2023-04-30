@@ -1,3 +1,13 @@
+const splitShort = (string, length) => {
+    const result = [];
+
+    for (let i = 0; i < string.length; i++) {
+        result.push(string.slice(0, length));
+    }
+
+    return result;
+}
+
 const expand = (div) => {
     if (!div.classList.contains("expandable")) {
         return;
@@ -23,4 +33,12 @@ const expand = (div) => {
     return;
 }
 
-export default expand;
+const getExerciseIndex = (index) => {
+    return "exercise"+index;
+}
+
+export default {
+    splitShort,
+    expand,
+    getExerciseIndex,
+}
