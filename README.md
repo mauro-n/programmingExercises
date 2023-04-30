@@ -7,3 +7,7 @@
 
 ## Visualizar:
 - https://mauro-n.github.io/programmingExercises/
+
+## To-do:
+- Modificar para consumir JSON
+- Adicionar bootstrap
