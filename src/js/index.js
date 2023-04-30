@@ -16,6 +16,7 @@ window.onload = () => {
 
     const allExercises = document.querySelectorAll(".exercise");
     const allBanners = document.querySelectorAll(".exercise__banner");
+    const allExerciseArrows = document.querySelectorAll(".exercise__arrow");
     const allTitles = document.querySelectorAll(".exercise__header__title");
     const allShorts = document.querySelectorAll(".exercise__short");
     const allDescriptions = document.querySelectorAll(".exercise__caption");
@@ -39,6 +40,7 @@ window.onload = () => {
         allExercises[i].classList.remove("display-none");
         allExercises[i].id = "e"+i;
         allBanners[i].src = `./src/img/${utils.randomNum(5)}.jpg`;
+        allExerciseArrows[i].src = "./src/img/down-arrow.png"
         allTitles[i].textContent = "Exercício " + (i + 1);
         const short = utils.splitShort(exercises[utils.getExerciseIndex(i)].description, shortLength);
         allShorts[i].textContent = short[0] + "...";
