@@ -21,11 +21,13 @@ const exerciseConstructor = () => {
 
     const level = document.createElement("div");
     level.classList.add("exercise__level");
+    level.textContent = "Begginer";
 
     const caption = document.createElement("div");
     caption.classList.add("exercise__caption");
 
-    const nextBtn = document.createElement("button");
+    const nextBtn = document.createElement("a");
+    nextBtn.textContent = "Próximo";
     nextBtn.classList.add("exercise__nextButton");
 
     const article = document.createElement("article");

@@ -33,12 +33,24 @@ const expand = (div) => {
     return;
 }
 
+const expandAll = (el) => {
+    for (let i = 0; i < el.length; i++) {
+        el[i].classList.add("exercise--expanded");
+    }
+}
+
 const getExerciseIndex = (index) => {
     return "exercise"+index;
+}
+
+const contractDropDown = (el) => {
+    el.checked = false;
 }
 
 export default {
     splitShort,
     expand,
     getExerciseIndex,
+    expandAll,
+    contractDropDown,
 }
