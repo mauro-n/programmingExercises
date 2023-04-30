@@ -3,6 +3,29 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 3vh;
+    z-index: 2;
+}
+
+.exercise--expanded {
+    height: 70vh;
+}
+
+.exercise--expanded .exercise__caption,
+.exercise--expanded .exercise__nextButton {
+    display: block;
+}
+
+.exercise__caption {
+    display: none;
+    width: 90%;
+    margin-top: 20px;
+    padding: 0.2em;
+    border-radius: 1em;
+    background-color: #f6f3f3;
+}
+.exercise__nextButton {
+    display: none;
+    margin-top: auto;
 }
 
 .exercise__header {
@@ -16,6 +39,9 @@
 
 .exercise__header__title {
     font-size: calc(1.5em + 0.8vw);
+}
+.exercise__header__arrow {
+    border: 1px solid red;
 }
 
 .exercise__category {
