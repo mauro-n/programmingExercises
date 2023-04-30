@@ -23,6 +23,9 @@ const exerciseConstructor = () => {
     level.classList.add("exercise__level");
     level.textContent = "Begginer";
 
+    const banner = document.createElement("img");
+    banner.classList.add("exercise__banner");
+
     const caption = document.createElement("div");
     caption.classList.add("exercise__caption");
 
@@ -36,6 +39,7 @@ const exerciseConstructor = () => {
     article.appendChild(header);
     article.appendChild(short);
     article.appendChild(level);
+    article.appendChild(banner);
     article.appendChild(caption);
     article.appendChild(nextBtn);
 

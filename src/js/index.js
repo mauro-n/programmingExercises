@@ -5,7 +5,7 @@ import liConstructor from './liConstruc.js';
 
 window.onload = () => {
     const exercisesContainer = document.querySelector(".exercisesContainer");
-    const menuItems = document.querySelector("#menu1__items");
+    const menuItems = document.querySelector("#menu__items");
 
     let i1 = 0;
     for (let exercise in exercises) {
@@ -15,17 +15,17 @@ window.onload = () => {
     }
 
     const allExercises = document.querySelectorAll(".exercise");
+    const allBanners = document.querySelectorAll(".exercise__banner");
     const allTitles = document.querySelectorAll(".exercise__header__title");
     const allShorts = document.querySelectorAll(".exercise__short");
     const allDescriptions = document.querySelectorAll(".exercise__caption");
     const allNextBtn = document.querySelectorAll(".exercise__nextButton");
     const menuItem = document.querySelectorAll(".menu__item");
     const dropdownMenu = document.querySelector("#toggle1");
-    const shortLength = 30;
+    const shortLength = 50;
 
     for (let i = 0; i < allNextBtn.length; i++) {
         allNextBtn[i].addEventListener("click", () => {
-            console.log("cuida")
             utils.expandAll(allExercises);
         });
         menuItem[i].addEventListener("click", () => {
@@ -38,6 +38,7 @@ window.onload = () => {
     for (let exercise in exercises) {
         allExercises[i].classList.remove("display-none");
         allExercises[i].id = "e"+i;
+        allBanners[i].src = `./src/img/${utils.randomNum(5)}.jpg`;
         allTitles[i].textContent = "Exercício " + (i + 1);
         const short = utils.splitShort(exercises[utils.getExerciseIndex(i)].description, shortLength);
         allShorts[i].textContent = short[0] + "...";
