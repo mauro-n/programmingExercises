@@ -11,3 +11,8 @@
     background-color: rgb(225, 243, 246);
     border-radius: 8px;
 }
+.cs-main-row {
+    margin-top: 4% !important;
+    max-width: 750px !important;
+}
+
