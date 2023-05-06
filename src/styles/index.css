@@ -1,5 +1,13 @@
-@import url("./reset.css");
-@import url("./navbar.css");
-@import url("./container.css");
-@import url("./exercise.css");
-
+.nav-socials-icon {
+    width: 50%;
+}
+.card-toggler{
+    margin-bottom: 3px;
+    background-color: #00000000;
+    border: none;
+    width: 100%;
+}
+.cs-card-container{
+    background-color: rgb(225, 243, 246);
+    border-radius: 8px;
+}
