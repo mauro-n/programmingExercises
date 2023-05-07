@@ -26,6 +26,10 @@
     margin-top: 4% !important;
     max-width: 750px !important;
 }
+.navigator-link {
+    position: relative;
+    top: -20px;
+}
 
 
 

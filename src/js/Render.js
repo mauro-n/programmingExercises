@@ -3,8 +3,9 @@ import Utils from "./utils.js";
 const Render = {
     exerciseCard: ({id, description}) => {
         return `
-        <div class="cs-card-container mb-4">
-        <button class="card-toggler text-start" data-bs-toggle="collapse" data-bs-target="#card${id}">
+        <span id="n${id}" class="navigator-link"></span>
+        <label for="card-toggler" class="cs-card-container mb-4">
+        <button id="card-toggler" class="card-toggler text-start" data-bs-toggle="collapse" data-bs-target="#card${id}">
             Exercício ${id + 1}
         </button>
 
@@ -17,12 +18,20 @@ const Render = {
         <div class="card collapse" id="card${id}">
             <img src="./src/img/1.jpg" alt="Card image cap" class="card-img-top">
             <div class="card-body">
+                
                 <h5 class="card-title">Exercício ${id + 1}</h5>
+                
                 <p class="card-text">${description}</p>
-                <div class="text-center"><a href="#" class="btn btn-primary">Próximo exercício </a></div>
+                
+                <div class="text-center">
+                    <a class="btn btn-primary next-exercise"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#card${id + 1}"
+                    href="#n${id + 1}"> Próximo exercício </a>
+                </div>
             </div>
         </div>
-        </div>
+        </label>
         `
     }
 }
