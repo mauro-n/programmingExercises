@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios de Programação - Mauro-n </title>
     <link rel="stylesheet" href="./src/styles/index.css">
-    <script src="./src/js/index.js" type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">    
 </head>
+
 <body>
-    <section class="navbarContainer">
-        <div class="navbar__logo--text">Exercícios</div>
-        <div class="dropButtonContainer">
-            <input type="checkbox" id="toggle1"/>
-            <label for="toggle1" class="hamburguer1">
-                <div class="top"></div>
-                <div class="meat"></div>
-                <div class="bottom"></div>
-            </label>
-            <div class="menu1">
-                <ul id="menu__items">
-                    <div class="menu__item menu__title">Código fonte e Rede social: </div>
-                    <div class="menu__item menu__socials">
-                        <a href="https://github.com/mauro-n/programmingExercises" target="_blank">
-                            <img src="./src/img/github-mark.png" alt="Github" class="menu__social__img">
-                        </a>
-                        <a href="https://www.linkedin.com/in/mauro-henrique-5a2b08b6/" target="_blank">
-                            <img src="./src/img/linkedin.png" alt="Github" class="menu__social__img">
-                        </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-extend-md">
+        <div class="container">
+            <a href="###" class="navbar-brand">Exercícios</a>
+
+            <button href="###" class="navbar-toggler" data-bs-toggle="modal" data-bs-target="#navBarModal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <main class="container">
+        <!-- Nav Bar Modal -->
+        <div class="modal fade" id="navBarModal" tabindex="-1" role="dialog" aria-labelledby="navBarModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="navBarModalLabel">Código fonte e redes sociais:</h5>
+                        <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
                     </div>
-                    <div class="menu__item menu__title">Lista de exercícios: </div>
-                </ul>
+                    <div class="modal-body">
+                        <div class="row">
+                            <a href="https://github.com/mauro-n/" class="col-6 text-center" target="_blank"
+                                rel="noopener noreferrer">
+                                <img class="nav-socials-icon" src="./src/img/github-mark.png" alt="Github">
+                            </a>
+                            <a href="https://www.linkedin.com/in/mauro-henrique-5a2b08b6/" class="col-6 text-center"
+                                target="_blank" rel="noopener noreferrer">
+                                <img class="nav-socials-icon" src="./src/img/linkedin.png" alt="LinkedIn">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="navBarModalLabel">Lista de exercícios:</h5>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                </div>
             </div>
-        </div>        
-    </section>
-    <main class="mainContainer">
-        <section class="exercisesContainer">
-            
+        </div>
+        <!-- Nav Bar Modal End-->
+        <section>
+            <div class="row justify-content-center">
+                <div class="col d-flex flex-column cs-main-row" id="cards-container">
+                    <!-- Exercise Cards go here! -->
+                    
+                </div>
+            </div>
+
         </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous">
+    </script>
+    <script src="./src/js/index.js" type="module"></script>
+    <script>
+        function scrolltoId(el) {            
+            el.scrollIntoView();
+        }
+    </script>
 </body>
+
 </html>

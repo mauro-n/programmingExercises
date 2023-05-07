@@ -1,5 +1,35 @@
-@import url("./reset.css");
-@import url("./navbar.css");
-@import url("./container.css");
-@import url("./exercise.css");
+.nav-socials-icon {
+    width: 50%;
+}
+.card-toggler{
+    margin-bottom: 3px;
+    background-color: #00000000;
+    border: none;
+    width: 100%;
+    font-size: calc(1em + 1vw);
+}
+
+.hide-children ~ .cs-card-description {
+    display: none;
+}
+
+.cs-card-container{
+    background-color: rgb(225, 243, 246);
+    border-radius: 8px;
+}
+
+.cs-card-category, .card-text {
+    font-size: calc(1em + 0.4vw);
+}
+
+.cs-main-row {
+    margin-top: 4% !important;
+    max-width: 750px !important;
+}
+.navigator-link {
+    position: relative;
+    top: -20px;
+}
+
+
 
