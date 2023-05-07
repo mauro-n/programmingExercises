@@ -1,15 +1,10 @@
 import ApiRequest from "./ApiRequest.js";
 import Render from "./Render.js";
 
-function scrolltoId(id, el) {
-    console.log(id);
-};
-
 const URL = "https://mauro-n.github.io/api-mauro-n/exercicios-api/v1/data.json";
 
 
 window.onload = async () => {
-
 
     const cardsContainer = document.getElementById("cards-container");
 
