@@ -3,7 +3,6 @@ import Render from "./Render.js";
 
 const URL = "https://mauro-n.github.io/api-mauro-n/exercicios-api/v1/data.json";
 
-
 window.onload = async () => {
 
     const cardsContainer = document.getElementById("cards-container");
@@ -19,6 +18,5 @@ window.onload = async () => {
     const { exercises } = await ApiRequest.get(URL);
     const cardsContent = exercises.map(Render.exerciseCard).join("");
     cardsContainer.innerHTML = cardsContent;
-
 }
 
