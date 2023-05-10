@@ -21,6 +21,10 @@
 .cs-card-category, .card-text {
     font-size: calc(1em + 0.4vw);
 }
+.cs-cart-img {
+    width: 100%;
+    overflow-y: hidden;
+}
 
 .cs-main-row {
     margin-top: 4% !important;
@@ -29,6 +33,9 @@
 .navigator-link {
     position: relative;
     top: -20px;
+}
+.collapsing {
+    display: none !important;
 }
 
 

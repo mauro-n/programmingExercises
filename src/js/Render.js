@@ -14,7 +14,7 @@ Render.exerciseCard = function ({ id, description }) {
             <a href="###" class="badge text-white bg-secondary mb-2">Begginer</a>
         </span>
         <div class="card collapse" id="card${id}">
-            <img src="./src/img/5.jpg" alt="Card image cap" class="card-img-top">
+            <img src="./src/img/5.jpg" alt="Card image cap" class="card-img-top cs-card-img">
             <div class="card-body">                
                 <h5 class="card-title">Exercício ${id + 1}</h5>                
                 <p class="card-text">${description}</p>                
